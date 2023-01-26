@@ -10,7 +10,7 @@ const ingresar = () => {
    let cont1 = 0, cont2 = 0, cont3 = 0, cont4 = 0, cont5 = 0;
    if(input.value === '1' || input.value === '2'){
       cont1++;      
-      msg1.value = cont1;          
+      msg1.innerText = cont1;          
    }else if(input.value === '3' || input.value === '4') {
       cont2++;
       msg2.innerText = cont2;
