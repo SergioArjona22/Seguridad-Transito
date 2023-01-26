@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+body {
+   font-family: 'Ubuntu', sans-serif;
+   background-color: #2C514C;
+}
+.info {
+   display: block;
+   font-size: 16px;
+   color: grey;
+}
+
+.container {
+   margin: 20px auto 0 auto;
+   padding: 10px;
+   background-color: #AEC3B0;
+   width: 500px;
+   text-align: center;
+   border-radius: 10px;
+   box-shadow: 5px 5px 10px black;
+}
+.txt-in {
+   display: inline-block;
+   width: 20%;
+   height: 30px;
+   text-align: center;
+   padding: 3px;
+   border-radius: 5px;
+   border: none;     
+}
+button {
+   width: 140px;
+   height: 40px;
+   padding: 5px;
+   text-align: center;
+   border-radius: 10px;
+   border: none;
+   cursor: pointer;
+   margin-left: 8px;
+   font-weight: bold;  
+}
+
+h1{
+   font-size: 32px;
+   color: white;
+   text-shadow: 5px 5px 15px black;
+}
+
+.consulta {
+   background-color: #124559;
+   color: white;
+   transition: 600ms;      
+}
+
+.consulta:hover {
+   background-color: #598392;    
+}
+
+.ingreso {
+   background-color: #C8E0F4;
+   color: black;
+   transition: 600ms;   
+}
+
+.ingreso:hover {
+   background-color: #508AA8;    
+}
+
+.container-2 {
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;        
+}
+
+.caja {
+   width: 270px;
+   background-color: #689689;
+   padding: 10px;
+   margin-left: 8px;
+   border-radius: 10px;
+   text-align: center;
+   box-shadow: 5px 5px 10px black;
+}
+
+.placa {
+   width: 250px;
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+p {
+   display: none;
+   font-size: 22px;
+   color: black;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio Placas</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/dcf46dca5e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="container">
+      <h1>Seguridad de Tránsito</h1>
+      <input type="text" id="placa-digito" class="txt-in" />
+      <p class="info">
+        <i class="fa-solid fa-circle-info"></i>
+        Digite por favor el último dígito de su placa
+      </p>
+      <button class="ingreso" onclick="ingresar();">
+        <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        Ingresar
+      </button>
+      <button class="consulta" onclick="consultar();">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        Consultar
+      </button>
+    </section>
+    <section class="container-2">
+      <div class="caja">
+         <h3>Placas Amarillas</h3>
+         <img src="images/placa_amarilla.png" alt="amarilla" class="placa">
+         <p id="show-1">--</p>
+      </div>
+      <div class="caja">
+         <h3>Placas Rosas</h3>
+         <img src="images/placa_rosa.png" alt="rosa" class="placa">
+         <p id="show-2">--</p>
+      </div>
+      <div class="caja">
+         <h3>Placas Rojas</h3>
+         <img src="images/placa_roja.png" alt="roja" class="placa">
+         <p id="show-3">--</p>
+      </div>
+      <div class="caja">
+         <h3>Placas Verdes</h3>
+         <img src="images/placa_verde.png" alt="verder" class="placa">
+         <p id="show-4">--</p>
+      </div>
+      <div class="caja">
+         <h3>Placas Azules</h3>
+         <img src="images/placa_azul.png" alt="azul" class="placa">
+         <p id="show-5">--</p>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
