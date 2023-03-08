@@ -6,6 +6,7 @@ let msg3 = document.getElementById('show-3');
 let msg4 = document.getElementById('show-4');
 let msg5 = document.getElementById('show-5');
 
+//Comparar los valores de cada contador
 const ingresar = () => {   
    let cont1 = 0, cont2 = 0, cont3 = 0, cont4 = 0, cont5 = 0;
    if(input.value === '1' || input.value === '2'){
