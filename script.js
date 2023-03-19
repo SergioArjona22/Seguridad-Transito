@@ -1,47 +1,39 @@
-
 let input = document.getElementById('placa-digito');
-let msg1 = document.getElementById('show-1');
-let msg2 = document.getElementById('show-2');
-let msg3 = document.getElementById('show-3');
-let msg4 = document.getElementById('show-4');
-let msg5 = document.getElementById('show-5');
+const msg = [
+  document.getElementById('show-1'),
+  document.getElementById('show-2'),
+  document.getElementById('show-3'),
+  document.getElementById('show-4'),
+  document.getElementById('show-5')
+];
 
-//Comparar los valores de cada contador
 const ingresar = () => {   
-   let cont1 = 0, cont2 = 0, cont3 = 0, cont4 = 0, cont5 = 0;
-   if(input.value === '1' || input.value === '2'){
-      cont1++;      
-      msg1.innerText = cont1;          
-   }else if(input.value === '3' || input.value === '4') {
-      cont2++;
-      msg2.innerText = cont2;
-   }else if(input.value === '5' || input.value === '6') {
-      cont3++;
-      msg3.innerText = cont3;     
-   }else if(input.value === '7' || input.value === '8') {
-      cont4++;
-      msg4.innerText = cont4;      
-   }else if(input.value === '9' || input.value === '0') {
-      cont5++;
-      msg5.innerText = cont5;     
-   }
-      
-   input.value = "";
-   document.getElementById('show-1').style.display = 'none';
-   document.getElementById('show-2').style.display = 'none';
-   document.getElementById('show-3').style.display = 'none';
-   document.getElementById('show-4').style.display = 'none';
-   document.getElementById('show-5').style.display = 'none';      
+  let conts = [0, 0, 0, 0, 0];
+  let index = -1;
+  
+  if(input.value === '1' || input.value === '2') index = 0
+  else if(input.value === '3' || input.value === '4') index = 1
+  else if(input.value === '5' || input.value === '6') index = 2
+  else if(input.value === '7' || input.value === '8') index = 3
+  else if(input.value === '9' || input.value === '0') index = 4
+  else {
+    swal("Error", "Datos erroneos!", "error");
+    input.value = "";    
+  }
+  conts[index]++;
+  msg[index].innerText = conts[index];
+  swal("Ingresado", "con exito!", "success");
+  input.value = "";
+  msg.forEach(element => {
+    element.style.display = 'none';
+  });        
 }
 
-
-
 const consultar = () => {   
-   document.getElementById('show-1').style.display = 'block';
-   document.getElementById('show-2').style.display = 'block';
-   document.getElementById('show-3').style.display = 'block';
-   document.getElementById('show-4').style.display = 'block';
-   document.getElementById('show-5').style.display = 'block';      
+  msg.forEach(element => {
+    element.style.display = 'block';
+  });
+  swal("Consulta", "Tipos de placas", "info");      
 }
 
 
