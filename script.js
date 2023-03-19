@@ -10,7 +10,7 @@ const msg = [
 const ingresar = () => {   
   let conts = [0, 0, 0, 0, 0];
   let index = -1;
-  
+  //revision del numero de la placa asociada
   if(input.value === '1' || input.value === '2') index = 0
   else if(input.value === '3' || input.value === '4') index = 1
   else if(input.value === '5' || input.value === '6') index = 2
